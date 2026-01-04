@@ -55,5 +55,36 @@ sudo apt install tesseract-ocr
 
 ```
 
+## Instalasi Proyek
+### 1. Clone Repository
+```bash
+
+git clone https://github.com/harunid12/ocr_ktp.git
+cd ocr_ktp
+```
+
+### 2. Buat dan Aktifkan Virtual Environment
+### Windows
+```cmd
+
+python -m venv venv
+venv\Scripts\activate
+```
+
+### Linux/macOS
+```bash
+
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3. Install Dependecies
+```bash
+pip install -r requirements.txt
+```
 
 
+## Menjalankan Aplikasi 
+```bash
+uvicorn app.main:app --reload
+```
