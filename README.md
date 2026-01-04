@@ -88,3 +88,33 @@ pip install -r requirements.txt
 ```bash
 uvicorn app.main:app --reload
 ```
+
+Aplikasi Berjalan pada 
+```text
+http://127.0.0.1:8000
+```
+
+Dokumentasi API 
+```text
+http://127.0.0.1:8000/docs
+```
+
+## Alur Kerja Sistem
+1. Client mengirimkan gambar KTP melalui endpoint API
+2. Gambar diproses pada layer utilitas (preprocessing)
+3. OCR dilakukan menggunakan Tesseract
+4. Hasil OCR diproses dan dibersihkan dari whitespace berlebih
+5. Data diparsing menjadi field KTP terstruktur
+6. Response dikembalikan dalam format JSON
+
+## Batasan
+1. Akurasi OCR bergantung pada kualitas gambar
+2. Pencahayaan dan resolusi rendah dapat mempengaruhi hasil ekstraksi
+3. Format KTP non-standar dapat menurunkan akurasi parsing
+
+## Author
+### Ahmad Harun
+AI Engineer
+
+## Lisensi
+Proyek ini dibuat untuk keperluan pembelajaran dan pengembangan sistem OCR. Penggunaan dan modifikasi diperbolehkan sesuai kebutuhan.
