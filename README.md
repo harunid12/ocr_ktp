@@ -1,4 +1,4 @@
-# KTP OCR API menggunakan FastAPI dan Tesseract
+# OCR KTP menggunakan FastAPI dan Tesseract
 
 Proyek ini merupakan REST API untuk melakukan **Optical Character Recognition (OCR)** pada **KTP Indonesia** menggunakan **Tesseract OCR**, **OpenCV**, dan **FastAPI**. Sistem dirancang secara modular untuk memisahkan logika API, service, utilitas, dan konfigurasi sehingga mudah dikembangkan dan dipelihara.
 
@@ -9,8 +9,6 @@ Proyek ini merupakan REST API untuk melakukan **Optical Character Recognition (O
 - Parsing hasil OCR menjadi data KTP terstruktur (JSON)
 - REST API menggunakan FastAPI
 - Arsitektur modular dan scalable
-- Mendukung virtual environment (venv)
-- Manajemen dependensi melalui `requirements.txt`
 
 ## Struktur Proyek
 
@@ -27,8 +25,8 @@ ktp-ocr-api/
 │   │   ├── ktp_parser.py
 │   │   └── preprocess_ocr.py
 │   ├── utils/
-│   │   └── image_utils.py
-│   └── __init__.py
+│      └── image_utils.py
+│   
 ├── venv/
 ├── requirements.txt
 ├── README.md
