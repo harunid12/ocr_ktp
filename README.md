@@ -14,25 +14,26 @@ Proyek ini merupakan REST API untuk melakukan **Optical Character Recognition (O
 
 ## Struktur Proyek
 
+```text
 ktp-ocr-api/
 ├── app/
-│ ├── main.py
-│ ├── core/
-│ │ └── config.py
-│ ├── api/
-│ │ └── routes/
-│ │ 		└── ocr.py
-│ ├── services/
-│ │ ├── ktp_parser.py
-│ │ └── preprocess_ocr.py
-│ ├── utils/
-│ │ └── image_utils.py
-│ └── init.py
-│
+│   ├── main.py
+│   ├── core/
+│   │   └── config.py
+│   ├── api/
+│   │   └── routes/
+│   │       └── ocr.py
+│   ├── services/
+│   │   ├── ktp_parser.py
+│   │   └── preprocess_ocr.py
+│   ├── utils/
+│   │   └── image_utils.py
+│   └── __init__.py
 ├── venv/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
+```
 
 
 ## Prasyarat
@@ -51,5 +52,8 @@ ktp-ocr-api/
 ```bash
 sudo apt update
 sudo apt install tesseract-ocr
+
+```
+
 
 
